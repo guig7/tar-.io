@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcanum Tarô | Leitura</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand">ARCANUM TARÔ</div>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="cards.html">Cartas</a>
+            <a href="reading.html">Leitura</a>
+            <a href="about.html">Sobre</a>
+        </div>
+    </nav>
+
+    <main class="reading-arena">
+        <h2>Oráculo do Destino</h2>
+        <p>Concentre-se em sua pergunta e clique abaixo para iniciar a tiragem de 3 cartas (Passado, Presente, Futuro).
+        </p>
+
+        <button id="draw-btn" class="btn-mystic" style="margin-top: 2rem;">Iniciar Leitura</button>
+
+        <div class="slots" id="slots-container">
+            <!-- Card Slots -->
+            <div class="slot">
+                <h3>Passado</h3>
+                <div class="tarot-card" id="card-past">
+                    <div class="face back"></div>
+                    <div class="face front"></div>
+                </div>
+            </div>
+            <div class="slot">
+                <h3>Presente</h3>
+                <div class="tarot-card" id="card-present">
+                    <div class="face back"></div>
+                    <div class="face front"></div>
+                </div>
+            </div>
+            <div class="slot">
+                <h3>Futuro</h3>
+                <div class="tarot-card" id="card-future">
+                    <div class="face back"></div>
+                    <div class="face front"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="interpretation" class="interpretation-box" style="display:none;">
+            <h3>Interpretação</h3>
+            <div id="reading-text"></div>
+            <a href="#" id="share-whatsapp" class="share-btn" target="_blank">📲 Compartilhar no WhatsApp</a>
+        </div>
+    </main>
+
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/reading.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcanum Tarô | Enciclopédia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand">ARCANUM TARÔ</div>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="cards.html">Cartas</a>
+            <a href="reading.html">Leitura</a>
+            <a href="about.html">Sobre</a>
+        </div>
+    </nav>
+
+    <main class="cards-container">
+        <h2>Enciclopédia dos Arcanos</h2>
+        <input type="text" id="search-input" class="search-bar"
+            placeholder="Busque por nome, significado ou palavra-chave...">
+
+        <div id="cards-grid" class="grid">
+            <!-- Cards injected via JS -->
+        </div>
+    </main>
+
+    <script src="assets/js/cards.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>

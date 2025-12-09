@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcanum Tarô | Início</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="brand">ARCANUM TARÔ</div>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="cards.html">Cartas</a>
+            <a href="reading.html">Leitura</a>
+            <a href="about.html">Sobre</a>
+            <button id="theme-toggle" class="theme-toggle">☀/☾</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Desvende seu Destino</h1>
+        <p>Explore a sabedoria milenar dos 78 arcanos e encontre respostas para sua jornada.</p>
+        <div class="cta-group">
+            <a href="reading.html" class="btn-mystic">Fazer Leitura</a>
+            <a href="cards.html" class="btn-mystic outline">Explorar Cartas</a>
+        </div>
+    </header>
+
+    <script>
+        // Simple Theme Toggle Inline Script for immediate functionality
+        const toggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        toggle.addEventListener('click', () => {
+            const current = body.getAttribute('data-theme');
+            const next = current === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', next);
+        });
+    </script>
+</body>
+
+</html>
